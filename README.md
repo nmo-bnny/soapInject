@@ -12,22 +12,22 @@ To run type
 python3 soapCheck.py
 
 # What do I type in ?
-Example of usable ip for this script
-192.168.0.1
+Example of usable ip for this script<br>
+192.168.0.1, 10.0.0.1 ...etc
 
-Example of usable port for this script
-5431
+Example of usable port for this script<br>
+5431, 1900, 80 ...etc
 
-Example of usable payload for this script
-%x
+Example of usable payload for this script<br>
+%x, %s ...etc
 
-Example of usable uuid for this script 
+Example of usable uuid for this script<br>
 uuid:0018-f8d7-a07102009adc
 
-Example of usable target service for this script 
+Example of usable target service for this script<br> 
 WANIPConnection:1
 
-Once done soapInject concats your inputs into a URL and it should look like this␣␣
+Once done soapInject concats your inputs into a URL and it should look like this<br>
 http://192.168.0.1:5431/uuid:0018-f8d7-a07102009adc/WANIPConnection:1
 
 # Extra's
