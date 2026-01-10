@@ -27,7 +27,7 @@ uuid:0018-f8d7-a07102009adc
 Example of usable target service for this script 
 WANIPConnection:1
 
-Once done soapInject concats your inputs into a URL and it should look like this
+Once done soapInject concats your inputs into a URL and it should look like this␣␣
 http://192.168.0.1:5431/uuid:0018-f8d7-a07102009adc/WANIPConnection:1
 
 # Extra's
