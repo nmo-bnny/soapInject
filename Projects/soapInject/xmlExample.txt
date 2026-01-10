@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+<specVersion>
+<major>1</major>
+<minor>0</minor>
+</specVersion>
+<URLBase>http://192.168.1.1:5431</URLBase>
+<device>
+<deviceType>urn:schemas-upnp-org:device:InternetGatewayDevice:1</deviceType>
+<presentationURL>/index.asp</presentationURL>
+<friendlyName>Linksys WRT150N</friendlyName>
+<manufacturer>Linksys Inc.</manufacturer>
+<manufacturerURL>http://www.linksys.com/</manufacturerURL>
+<modelDescription>Internet Access Server</modelDescription>
+<modelName>WRT150N</modelName>
+<modelNumber>v1.00.5</modelNumber>
+<modelURL>http://www.linksys.com/</modelURL>
+<UDN>uuid:0018-f8d7-a07100009adc</UDN>
+<serviceList>
+<service>
+<serviceType>urn:schemas-upnp-org:service:Layer3Forwarding:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:Layer3Forwarding:11</serviceId>
+<controlURL>/uuid:0018-f8d7-a07100009adc/Layer3Forwarding:1</controlURL>
+<eventSubURL>/uuid:0018-f8d7-a07100009adc/Layer3Forwarding:1</eventSubURL>
+<SCPDURL>/dynsvc/Layer3Forwarding:1.xml</SCPDURL>
+</service>
+</serviceList>
+<deviceList>
+<device>
+<deviceType>urn:schemas-upnp-org:device:WANDevice:1</deviceType>
+<friendlyName>urn:schemas-upnp-org:device:WANDevice:1</friendlyName>
+<manufacturer>Linksys Inc.</manufacturer>
+<manufacturerURL>http://www.linksys.com/</manufacturerURL>
+<modelDescription>Internet Access Server</modelDescription>
+<modelName>WRT150N</modelName>
+<modelNumber>v1.00.5</modelNumber>
+<modelURL>http://www.linksys.com/</modelURL>
+<UDN>uuid:0018-f8d7-a07101009adc</UDN>
+<serviceList>
+<service>
+<serviceType>urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:WANCommonIFC1</serviceId>
+<controlURL>/uuid:0018-f8d7-a07101009adc/WANCommonInterfaceConfig:1</controlURL>
+<eventSubURL>/uuid:0018-f8d7-a07101009adc/WANCommonInterfaceConfig:1</eventSubURL>
+<SCPDURL>/dynsvc/WANCommonInterfaceConfig:1.xml</SCPDURL>
+</service>
+</serviceList>
+<deviceList>
+<device>
+<deviceType>urn:schemas-upnp-org:device:WANConnectionDevice:1</deviceType>
+<friendlyName>urn:schemas-upnp-org:device:WANConnectionDevice:1</friendlyName>
+<manufacturer>Linksys Inc.</manufacturer>
+<manufacturerURL>http://www.linksys.com/</manufacturerURL>
+<modelDescription>Internet Access Server</modelDescription>
+<modelName>WRT150N</modelName>
+<modelNumber>v1.00.5</modelNumber>
+<modelURL>http://www.linksys.com/</modelURL>
+<UDN>uuid:0018-f8d7-a07102009adc</UDN>
+<serviceList>
+<service>
+<serviceType>urn:schemas-upnp-org:service:WANIPConnection:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:WANIPConn1</serviceId>
+<controlURL>/uuid:0018-f8d7-a07102009adc/WANIPConnection:1</controlURL>
+<eventSubURL>/uuid:0018-f8d7-a07102009adc/WANIPConnection:1</eventSubURL>
+<SCPDURL>/dynsvc/WANIPConnection:1.xml</SCPDURL>
+</service>
+<service>
+<serviceType>urn:schemas-upnp-org:service:WANPPPConnection:1</serviceType>
+<serviceId>urn:upnp-org:serviceId:WANPPPConn1</serviceId>
+<controlURL>/uuid:0018-f8d7-a07102009adc/WANPPPConnection:1</controlURL>
+<eventSubURL>/uuid:0018-f8d7-a07102009adc/WANPPPConnection:1</eventSubURL>
+<SCPDURL>/dynsvc/WANPPPConnection:1.xml</SCPDURL>
+</service>
+</serviceList>
+</device>
+</deviceList>
+</device>
+</deviceList>
+</device>
+</root>
