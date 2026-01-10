@@ -1,4 +1,4 @@
-# soapCheck
+# soapInject
 A simple py script that allows you to send custom SOAP packets with your own payloads
 
 # Libraries
