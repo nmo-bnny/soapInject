@@ -27,7 +27,7 @@ uuid:0018-f8d7-a07102009adc
 Example of usable target service for this script<br> 
 WANIPConnection:1
 
-Once done soapInject concats your inputs into a URL and it should look like this<br>
+Once done soapCheck concats your inputs into a URL and it should look like this<br>
 http://192.168.0.1:5431/uuid:0018-f8d7-a07102009adc/WANIPConnection:1
 
 # Extra's
@@ -35,3 +35,9 @@ linksysPentest.txt - An ethical vulnerability assessment on a device I own, use 
 xmlExample.txt - A sample XML I gathered when testing, use it as a reference if you get lost when testing.
 
 # Troubleshooting
+Make sure requests library is imported correctly
+If soapCheck.py "freezes" it likely cannot reach the IP address provided make sure the IP address provided is on your network.  
+Use Wireshark to review network traffic, to confirm soapCheck.py is sending packets
+Firewalls can block incoming and outgoing requests... so keep that in mind.
+
+
