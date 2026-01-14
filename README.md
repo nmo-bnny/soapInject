@@ -34,10 +34,23 @@ http://192.168.0.1:5431/uuid:0018-f8d7-a07102009adc/WANIPConnection:1
 linksysPentest.txt - An ethical vulnerability assessment on a device I own, use this as a reference to use the tool for your own ethical assessments!<br>
 xmlExample.txt - A sample XML I gathered when testing, use it as a reference if you get lost when testing.
 
+# Important
+If targeting a similar device remember than in order to view the format string vulnerability you must first send your specifier to the module that sets the connection type (you should see code 200!)
+and to be able to see if vulnerable you must call the get connection type module, you will then see a memory address.
+
+
 # Troubleshooting
 Make sure requests library is imported correctly<br>
 If soapCheck.py "freezes" it likely cannot reach the IP address provided make sure the IP address provided is on your network.<br>
 Use Wireshark to review network traffic, to confirm soapCheck.py is sending packets<br>
 Firewalls can block incoming and outgoing requests... so keep that in mind.<br>
+Packet headers may need to be modified manually depending on the module you are targeting 
+
+# Updates
+Coming soon ...
+
+Dynamic packet headers
+Dynamic module options
+
 
 
