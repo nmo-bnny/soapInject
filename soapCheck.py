@@ -52,11 +52,11 @@ print("\n")
 
 
 
-# SOAP Packet
+# SOAP Packet Headers (You may need to update packet structure for more complex modules)
 
 headers = {
     "Content-Type": "text/xml; charset=\"utf-8\"",
-    "SOAPAction": "\"urn:schemas-upnp-org:service:WANIPConnection:1#SetConnectionType\""
+    "SOAPAction": "\"urn:schemas-upnp-org:service:" + service + "#SetConnectionType\""
 }
 
 
