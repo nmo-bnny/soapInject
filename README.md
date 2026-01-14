@@ -36,20 +36,20 @@ xmlExample.txt - A sample XML I gathered when testing, use it as a reference if 
 
 # Important
 If targeting a similar device remember than in order to view the format string vulnerability you must first send your specifier to the module that sets the connection type (you should see code 200!)
-and to be able to see if vulnerable you must call the get connection type module, you will then see a memory address.
-
+and to be able to see if vulnerable you must call the get connection type module, you will then see a memory address.<br>
+Use the "gupnp-universal-cp" command to initilize the UPNP connection, after this you can run the soapCheck.py script!
 
 # Troubleshooting
 Make sure requests library is imported correctly<br>
 If soapCheck.py "freezes" it likely cannot reach the IP address provided make sure the IP address provided is on your network.<br>
 Use Wireshark to review network traffic, to confirm soapCheck.py is sending packets<br>
 Firewalls can block incoming and outgoing requests... so keep that in mind.<br>
-Packet headers may need to be modified manually depending on the module you are targeting 
+Packet headers may need to be modified manually depending on the module you are targeting.
 
 # Updates
 Coming soon ...
 
-Dynamic packet headers
+Dynamic packet headers<br>
 Dynamic module options
 
 
