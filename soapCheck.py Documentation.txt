@@ -1,0 +1,85 @@
+SoapInject Repo
+
+soapCheck.py Documentation
+
+soapCheck is a granular penetration tool used to send custom SOAP packets allowing you to directly contact modules and functions to send payloads.
+
+soapCheck requires certain values before doing its magic, when running the tool you will be asked the following:
+
+DO NOT ADD QUOTES TO THE OPTIONS BELOW WHEN TYPING INTO soapCheckr.py
+
+"Please type in the target IP address"
+The IP address should be the device you are attacking, the device you are attacking should be running the UPNP service.
+Examples
+192.168.0.1
+10.0.0.1
+
+"Please type in the target port"
+The port should be the port running the UPNP service typically it is 1900 but it depends on the device your are testing, use NMAP to see what services are running.
+Examples
+1900
+5431
+
+"Please type in the UUID" 
+The UUID should be the identifier that is returned by your target device's XML file (Check my walkthrough if you don't know how to do this)
+Examples
+uuid:0018-f8d7-a07102009adc
+uuid:0023-f2d9-a04102022abb
+
+"Please type in the function"
+The function should be the function you are targeting that is vulnerable (Check my walkthrough if you don't know how to this)
+Examples
+WANIPConnection:1
+WANPPPConnection:1
+
+
+Once everything is typed in, this URL will be generated and used by soapCheck.py to send your packet
+"http://192.168.0.1:5431/uuid:0018-f8d7-a07102009adc/WANIPConnection:1"
+
+
+
+
+soapCheck.py can now contact the target service but it needs to build your custom packet and requires headers in order for your payload to be correctly interpreted.
+
+
+
+How do I create a packet and its headers?
+
+
+Typically, you want to use Wireshark to view network traffic between you and the target UPNP service to see what
+headers are used by the receiving module. This step is vital as the headers are used to comprehend what you are sending to the target.
+
+
+"Please type in header values"
+The header tells the UPNP service what function to communicate with, you can add multiple values in the header,
+in order to exit header mode simply press Enter Then Ctrl + Z then Enter.
+
+Example of valid header values (The quotes should not be removed. Seperate values using comma and new line)
+"Content-Type": "text/xml; charset=\"utf-8\"",
+"SOAPAction": "\"urn:schemas-upnp-org:service:WANIPConnection:1#SetConnectionType\""
+
+
+
+
+"Please type in packet structure"
+
+The packet structure similar to the packet headers is dependent on the device you are communicating with it is recommended to monitor normal UPNP traffic so you can see what packet structure is accepted by the device.
+
+
+The %p is the payload for this example but it can be anything you can use to get more information from the target
+Example of valid packet structure
+
+'''<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+            s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <s:Body>
+    <u:SetConnectionType xmlns:u="urn:schemas-upnp-org:service:1#SetConnectionType>
+    <NewConnectionType> %p </NewConnectionType>
+    </u:SetConnectionType>
+  </s:Body>
+</s:Envelope>'''
+
+
+
+
+
