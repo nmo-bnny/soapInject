@@ -6,7 +6,7 @@ soapCheck is a granular penetration tool used to send custom SOAP packets allowi
 
 soapCheck requires certain values before doing its magic, when running the tool you will be asked the following:
 
-DO NOT ADD QUOTES TO THE OPTIONS BELOW WHEN TYPING INTO soapCheckr.py
+DO NOT ADD QUOTES TO THE OPTIONS BELOW WHEN TYPING INTO soapCheck.py
 
 "Please type in the target IP address"
 The IP address should be the device you are attacking, the device you are attacking should be running the UPNP service.
