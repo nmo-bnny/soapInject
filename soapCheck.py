@@ -59,7 +59,7 @@ headers = {
 
 
 
-# Copy paste packet structure or type in seperate by commas (If you don't know how to do this check my walkthrough on my github)
+# Type in or copy paste packet structure (If you don't know how to do this check my walkthrough on my github)
 
 packet = '''
 '''
